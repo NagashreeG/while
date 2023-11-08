@@ -1,10 +1,10 @@
 #!\bin\bash
 echo "enter a number:"
 read n
-sum=0
+fact=0
 while [ $n -gt 0 ]
 do
-sum=`expr $sum + $n`
+fact=`expr $fact \* $n`
 $n=`expr $n - 1`
 done
-echo "$sum" 
+echo "$fact" 
